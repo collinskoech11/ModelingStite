@@ -55,7 +55,7 @@
 			<div class="heading">
 				<h2>Our <span>areas</span> of focus</h2>
 			</div>
-			<div class="wrapper">
+			<div class="wrapper" id="wrapper">
 				<div class="item">
 					<div class="wrapper-img">
 						<img src="img/Model.jpg">
@@ -92,20 +92,12 @@
 					<img id="right" src="img/scrollRight.png">
 				</div>
 				<script>
-					const wrapper = document.querySelector("#right");
-
-					wrapper.addEventListener("click",function() {
-				
-
-
-						window.scrollTo({
-						top:0,
-						left: 1200,
-						behavior: "smooth"
+					$('#right').click(function() {
+ 					 	event.preventDefault();
+  					$('#wrapper').animate({
+    					scrollRight: "+=1200px"
+  					}, "slow");
 					});
-
-				
-				});
 		
 				</script>
 			</div>

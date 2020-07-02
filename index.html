@@ -89,8 +89,25 @@
 					</div>
 				</div>
 				<div class="control">
-					<img src="img/scrollRight.png">
+					<img id="right" src="img/scrollRight.png">
 				</div>
+				<script>
+					const wrapper = document.querySelector("#right");
+
+					wrapper.addEventListener("click",function() {
+				
+
+
+						window.scrollTo({
+						top:0,
+						left: 1200,
+						behavior: "smooth"
+					});
+
+				
+				});
+		
+				</script>
 			</div>
 		</div>
 	</div>

@@ -142,6 +142,9 @@ body{
 	color: rgb(0,0,150);
 	text-transform: uppercase;
 }
+.body-section .heading h2 span{
+	color: rgb(250,250,0);
+}
 .body-section  .wrapper{
 	max-height: 500px;
 	display: flex;
@@ -189,4 +192,5 @@ body{
 	font-weight: bold;
 	text-transform: uppercase;
 	border: none;
+	cursor: progress;
 }

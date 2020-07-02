@@ -6,6 +6,7 @@
 body{
 	margin: 0;
 	padding: 0;
+	min-height: 1100px;
 }
 /*topnav**/
 .topnav{
@@ -44,6 +45,23 @@ body{
 	transform: scale(1.1);
 	transition: 0.5s;
 }
+@media(max-width: 1100px){
+	.topnav .agency-txt{
+		width: 65%;
+	}
+	.topnav .agency-txt p{
+		font-size: 15px;
+	}
+}
+@media(max-width: 800px){
+	.topnav .agency-txt{
+		width: 70%;
+	}
+	.topnav .agency-txt p{
+		font-size: 10px;
+	}
+}
+
 /**title bar**/
 .title{
 	width: 100%;
@@ -80,4 +98,54 @@ body{
 	padding-top: 20px;
 	transition: 1.2s;
 }
+@media(max-width: 1000px){
+	.title .navigation{
+		width: 50%;
+	}
+}	
+@media(max-width: 800px){
+	.title .navigation{
+		width: 65%;
+	}
+	.title .navigation .item{
+		font-size:15px;
+	}
+}
+@media(max-width: 500px){
+	.title .navigation .item{
+		font-size:12px;
+	}
+}
 /**horizontal slider section**/
+
+.body-section{
+	width: 100%;
+	height: auto;
+}
+.body-section .heading{
+	width:100%;
+	height: 100px;
+	text-align: center;
+}
+.body-section .heading h2{
+	padding-top: 35px;
+	color: rgb(0,0,150);
+}
+.body-section  .wrapper{
+	max-height: 420px;
+	border:1px solid #ddd;
+	display: flex;
+	overflow-x: auto;
+}
+.body-section .wrapper::-webkit-scrollbar{
+	width: 0;
+	height: 0;
+}
+.body-section .wrapper .item{
+	min-width: 80%;
+	height: 400px;
+	line-height: 400px;
+	text-align: center;
+	background-color: #ddd;
+	margin-right: 2px;
+}

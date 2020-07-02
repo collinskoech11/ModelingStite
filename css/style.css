@@ -193,4 +193,13 @@ body{
 	text-transform: uppercase;
 	border: none;
 	cursor: progress;
+	border-radius: 3px;
+}
+.body-section .wrapper .control img{
+	right: 1000px;
+	z-index: 3;
+	position:relative;
+	top: 450px;
+	width: 30px;
+	height: 30px;
 }

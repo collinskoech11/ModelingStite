@@ -22,7 +22,7 @@ body{
 }
 .topnav .agency-txt p{
 	padding-top: 5px;
-	color: #fff;
+	color: rgb(220,200,0);
 }
 .topnav .socials{
 	width: 120px;
@@ -103,9 +103,10 @@ body{
 .title .navigation .item:hover p{
 	transform: scale(1.2);
 	padding-top: 20px;
-	color: rgb(250,200,0);
+	color: rgb(220,200,0);
 	transition: 1.2s;
 }
+
 @media(max-width: 1000px){
 	.title .navigation{
 		width: 50%;
@@ -170,8 +171,22 @@ body{
 }
 .body-section .wrapper .item .wrapper-text h4{
 	font-size: 28px;
-	color: rgb(0,0,150);
+	color:rgb(220,200,0);
 }
 .body-section .wrapper .item .wrapper-text p{
 	color: rgb(0,0,100);
+}
+.body-section .wrapper .item .wrapper-nav{
+	width: 100%;
+	height: auto;
+	align-items: center;
+}
+.body-section .wrapper .item .wrapper-nav button{
+	width: 120px;
+	height: 35px;
+	color:rgb(220,200,0);
+	background-color: rgb(0,0,150);
+	font-weight: bold;
+	text-transform: uppercase;
+	border: none;
 }

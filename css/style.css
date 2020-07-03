@@ -103,7 +103,7 @@ body{
 .title .navigation .item:hover p{
 	transform: scale(1.2);
 	padding-top: 20px;
-	color: rgb(220,200,0);
+	color: rgb(250,200,0);
 	transition: 1.2s;
 }
 
@@ -111,10 +111,16 @@ body{
 	.title .navigation{
 		width: 50%;
 	}
+	.title .title-img img{
+		width: 80%;
+	}
 }	
 @media(max-width: 800px){
 	.title .navigation{
 		width: 65%;
+	}
+	.title .title-img img{
+		width: 90%;
 	}
 	.title .navigation .item{
 		font-size:15px;
@@ -124,12 +130,14 @@ body{
 	.title .navigation .item{
 		font-size:12px;
 	}
+	.title .title-img img{
+		width: 100%;
+	}
 }
 /**horizontal slider section**/
 
 .body-section{
 	width: 100%;
-	height: auto;
 	background-color: rgb(0,0,0,0.03);
 }
 .body-section .heading{
@@ -141,12 +149,13 @@ body{
 	padding-top: 35px;
 	color: rgb(0,0,150);
 	text-transform: uppercase;
+	background-color: rgb(0,0,0.0.03);
 }
 .body-section .heading h2 span{
-	color: rgb(250,250,0);
+	color: rgb(250,200,0);
 }
 .body-section  .wrapper{
-	max-height: 500px;
+	min-height: 500px;
 	display: flex;
 	overflow-x: auto;
 }
@@ -167,14 +176,16 @@ body{
 .body-section .wrapper .item .wrapper-img{
 	width: 100%;
 	height: 350px;
+	align-items: center;
 }
 .body-section .wrapper .item img{
 	width: 100%;
 	height: 350px;
+	cursor: crosshair;
 }
 .body-section .wrapper .item .wrapper-text h4{
 	font-size: 28px;
-	color:rgb(220,200,0);
+	color: rgb(250,200,0);
 }
 .body-section .wrapper .item .wrapper-text p{
 	color: rgb(0,0,100);
@@ -187,12 +198,12 @@ body{
 .body-section .wrapper .item .wrapper-nav button{
 	width: 120px;
 	height: 35px;
-	color:rgb(220,200,0);
+	color: rgb(250,200,0);
 	background-color: rgb(0,0,150);
 	font-weight: bold;
 	text-transform: uppercase;
 	border: none;
-	cursor: progress;
+	cursor: inherit;
 	border-radius: 3px;
 }
 .body-section .wrapper .control img{
@@ -202,4 +213,44 @@ body{
 	top: 450px;
 	width: 30px;
 	height: 30px;
+}
+@media(max-width: 1200px){
+	.body-section .wrapper .item{
+		height: 630px;
+	}
+	.body-section  .wrapper{
+		height: 680px;
+	}
+}
+@media(max-width: 900px){
+	.body-section .wrapper .item img{
+		width: 150%;
+		margin-left:-100px;
+	}
+	.body-section  .wrapper{
+		max-height: 700px;
+	}
+	.body-section .wrapper .item{
+		height:660px;
+	}
+}
+@media(max-width: 700px){
+	.body-section .wrapper .item img{
+		width: 200%;
+		margin-left:-200px;
+	}
+	.body-section  .wrapper{
+		max-height: 720px;
+	}
+	.body-section .wrapper .item{
+		height: 660px;
+	}
+}
+@media(max-width: 500px){
+	.body-section .wrapper .item{
+		height: 690px;
+	}
+	.body-section  .wrapper{
+		height: 740px;
+	}
 }

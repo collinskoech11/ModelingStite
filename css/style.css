@@ -196,14 +196,14 @@ body{
 	align-items: center;
 }
 .body-section .wrapper .item .wrapper-nav button{
-	width: 120px;
+	width: 121px;
 	height: 35px;
 	color: rgb(250,200,0);
 	background-color: rgb(0,0,150);
 	font-weight: bold;
 	text-transform: uppercase;
 	border: none;
-	cursor: inherit;
+	cursor: pointer;
 	border-radius: 3px;
 }
 .body-section .wrapper .control img{

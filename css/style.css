@@ -181,7 +181,7 @@ body{
 .body-section .wrapper .item img{
 	width: 100%;
 	height: 350px;
-	cursor: crosshair;
+	cursor: progress;
 }
 .body-section .wrapper .item .wrapper-text h4{
 	font-size: 28px;

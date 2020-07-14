@@ -9,11 +9,11 @@ function() {
 });
 
 
-document.getElementById('button1'),addEventListener('click',
+document.getElementById('buttonone'),addEventListener('click',
 function(){
-	document.querySelector('.bg-modal-1').style.display = 'flex';
+	document.querySelector('.bg-modal-one').style.display = 'flex';
 });
-document.querySelector('.close-1').addEventListener('click',
+document.querySelector('.close-one').addEventListener('click',
 function() {
-	document.querySelector('.bg-modal-1').style.display = 'none';
+	document.querySelector('.bg-modal-one').style.display = 'none';
 });
